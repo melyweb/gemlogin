@@ -1,0 +1,26 @@
+{
+    "name": "gemlogin/scheduler",
+    "description": "A web application to manage GemLogin profiles, schedule tasks, and automate browser operations",
+    "type": "project",
+    "require": {
+        "php": ">=8.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "GemLogin\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "GemLogin",
+            "email": "admin@gemlogin.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "scripts": {
+        "post-install-cmd": [
+            "php setup.php"
+        ]
+    }
+}

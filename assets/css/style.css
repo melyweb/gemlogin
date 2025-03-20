@@ -1,0 +1,158 @@
+/* Custom styles for GemLogin Scheduler */
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0.5rem 1rem;
+    margin: 0.2rem 0;
+    border-radius: 0.25rem;
+}
+
+.sidebar .nav-link:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .nav-link.active {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-weight: 600;
+}
+
+.sidebar-heading {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Main content */
+main {
+    margin-left: 25%; /* Sidebar width */
+}
+
+@media (max-width: 768px) {
+    main {
+        margin-left: 0;
+    }
+}
+
+/* Cards */
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    background-color: rgba(0, 0, 0, 0.03);
+    font-weight: 600;
+}
+
+/* Forms */
+.form-required:after {
+    content: " *";
+    color: #dc3545;
+}
+
+/* Tables */
+.table th {
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Status badges */
+.badge-running {
+    background-color: #28a745;
+}
+
+.badge-pending {
+    background-color: #ffc107;
+}
+
+.badge-completed {
+    background-color: #17a2b8;
+}
+
+.badge-stopped {
+    background-color: #dc3545;
+}
+
+/* Login page */
+.login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Schedule timeline */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    width: 2px;
+    background-color: #dee2e6;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 13px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #007bff;
+    border: 2px solid #fff;
+}
+
+.timeline-item.success:before {
+    background-color: #28a745;
+}
+
+.timeline-item.warning:before {
+    background-color: #ffc107;
+}
+
+.timeline-item.danger:before {
+    background-color: #dc3545;
+}
+
+.timeline-content {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.timeline-time {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
